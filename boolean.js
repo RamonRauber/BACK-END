@@ -15,4 +15,3 @@ console.log(false  === 0)
 console.log(typeof("1"))  // -> texto (string)
 console.log(typeof(1))  // -> number
 console.log(typeof(true))  // -> boolean
-
