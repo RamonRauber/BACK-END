@@ -8,7 +8,7 @@ while(contador < custos.length){
 console.log("O seu custo mensal é "+ somaCustos)
 
 
-let ganhos=[2550, 600, 200, 100];
+let ganhos=[2550, 1000, 300, 250];
 let conta=0;
 let somaSalario=0;
 while(conta < ganhos.length){
