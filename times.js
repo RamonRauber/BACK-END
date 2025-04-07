@@ -6,7 +6,7 @@ let times= [
         alaEsquerda: "Leandro Lino",
         pivo: "Leozin",
         fixo: "Rodrigo",
-        técnico: "Douglão",
+        tecnico: "Douglão",
         vitorias: 31,
         derrotas: 5,
 
@@ -18,7 +18,7 @@ let times= [
         alaEsquerda: "Edimar",
         pivo: "Gugu Flores",
         fixo: "Sinésio",
-        técnico: "Malafaia",
+        tecnico: "Malafaia",
         vitorias: 18,
         derrotas: 15,
 
@@ -30,7 +30,7 @@ let times= [
         alaEsquerda: "Gui Henriques",
         pivo: "Cauê",
         fixo: "Felipe",
-        técnico: "Cidão",
+        tecnico: "Cidão",
         vitorias: 20,
         derrotas: 19,
 
@@ -42,7 +42,7 @@ let times= [
         alaEsquerda: "Lucas Cézar",
         pivo: "Dieguinho",
         fixo: "Ernani",
-        técnico: "Herick",
+        tecnico: "Herick",
         vitorias: 31,
         derrotas: 4,
 
@@ -54,7 +54,7 @@ let times= [
         alaEsquerda: "Alves",
         pivo: "Camilo",
         fixo: "Daniel",
-        técnico: "Sandro",
+        tecnico: "Sandro",
         vitorias: 24,
         derrotas: 11,
 
