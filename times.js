@@ -60,3 +60,11 @@ let times= [
 
     }
 ]
+
+function verTimes (){
+    times.forEach ((time) => {
+        console.log (time.nome + "-" + time.goleiro + "(goleiro)," + time.alaDireita + "(Ala Direita)," + time.alaEsquerda + "(Ala Esquerda)," + time.pivo + "(Pivo)," + time.fixo + "(Fixo),"+ time.tecnico + "(Técnico)," + time.vitorias + "(Vitórias)," + time.derrotas + "(Derrotas)")
+    }
+);
+}
+verTimes();
