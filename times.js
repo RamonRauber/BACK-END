@@ -1,65 +1,4 @@
-let times= [
-    {
-        nome: "Magno",
-        goleiro: "André Deko",
-        alaDireita: "Dieguinho",
-        alaEsquerda: "Leandro Lino",
-        pivo: "Leozin",
-        fixo: "Rodrigo",
-        tecnico: "Douglão",
-        vitorias: 31,
-        derrotas: 5,
-
-    },
-    {
-        nome: "Corinthians",
-        goleiro: "Koji",
-        alaDireita: "Daniel",
-        alaEsquerda: "Edimar",
-        pivo: "Gugu Flores",
-        fixo: "Sinésio",
-        tecnico: "Malafaia",
-        vitorias: 18,
-        derrotas: 15,
-
-    },
-    {
-        nome: "Santo André",
-        goleiro: "Caio",
-        alaDireita: "Xaropinho",
-        alaEsquerda: "Gui Henriques",
-        pivo: "Cauê",
-        fixo: "Felipe",
-        tecnico: "Cidão",
-        vitorias: 20,
-        derrotas: 19,
-
-    },
-    {
-        nome: "Joinville",
-        goleiro: "Kleyton",
-        alaDireita: "Alex",
-        alaEsquerda: "Lucas Cézar",
-        pivo: "Dieguinho",
-        fixo: "Ernani",
-        tecnico: "Herick",
-        vitorias: 31,
-        derrotas: 4,
-
-    },
-    {
-        nome: "ACBF",
-        goleiro: "Ângelo",
-        alaDireita: "Marcolla",
-        alaEsquerda: "Alves",
-        pivo: "Camilo",
-        fixo: "Daniel",
-        tecnico: "Sandro",
-        vitorias: 24,
-        derrotas: 11,
-
-    }
-]
+let times= require("./dados.json")
 
 function verTimes (){
     times.forEach ((time) => {
@@ -67,4 +6,32 @@ function verTimes (){
     }
 );
 }
+verTimes();
+
+function criarArquivo(){
+    let dadosEmtexto = JSON.stringify(times);
+    console.log(dadosEmtexto);
+    const fs = require("fs");
+    fs.writeFileSync("dados.json", dadosEmtexto);
+    console.log("Arquivo gerado com sucesso!")
+}
+function marcarJogos(timeA, timeB, data, horario, estadio, cidade){
+    let jogos = require("./jogos.json");
+    jogo = {
+        timeA: timeA,
+        timeB: timeB,
+        data: data,
+        horario: horario,
+        estadio: estadio,
+        cidade: cidade,
+    }
+    jogos.push(jogo);
+    jogosJSON = JSON.stringify(jogos);
+    const fs = require('fs');
+    fs.writeFileSync("jogos.json", jogosJSON);
+}
+marcarJogos("")
+
+//criarArquivo();
+
 verTimes();
